@@ -51,9 +51,8 @@ function pow(_){
 }
 var ch1 = chain([1,2,3,4,5,6,7])(evenOnly)
 var ch2 = ch1(pow) 
- // {data: [2,4,6], broken:false, brokenElement: undefined}
 console.log(ch1.clank())
-console.log(ch2.clank()) // {data: [4,16,36], broken:false, brokenElement: undefined}
+console.log(ch2.clank())
 ```
 Result:
 ```
