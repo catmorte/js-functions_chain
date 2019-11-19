@@ -19,9 +19,9 @@ function chain(data) {
       dataLoop: for(var j in localData) {
         var result = instance.functions[i](localData[j], j);
         if(result.break) {
+          brokenValue = localData[j];
           localData = newLocalData;
           broken = true;
-          brokenValue = result.data;
           break chainsLoop;
         }
         if(result.stop) {
